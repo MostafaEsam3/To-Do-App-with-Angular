@@ -1,0 +1,7 @@
+<form class="mx-2 pb-2" style="background-color: #FFF1D4;">
+<div class="mb-3 mx-2">
+  <label for="TASK" class="form-label" style="font-size: x-large; font-family: Lobster Two, sans-serif;">TODO-APP</label>
+  <input width="50px" type="email" class="form-control" id="TASK" aria-describedby="emailHelp" [formControl]="name" />
+</div>
+<button  type="button" (click)="AddTask()" class="btn btn-dark mx-2 ">Add Task</button>
+</form>

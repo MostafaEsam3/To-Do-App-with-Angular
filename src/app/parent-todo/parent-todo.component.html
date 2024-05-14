@@ -1,0 +1,5 @@
+<div class="mt-5 pb-4" style="border: 2px solid #09c; width: 50%; height: auto; margin: auto; "  >
+  <app-form-todo (handleAdd)="push($event)" ></app-form-todo>
+
+  <app-table-todo [dataOfTask]="arrayOfData"   (deleteFromChild)="deleteTask($event)"></app-table-todo>
+</div>

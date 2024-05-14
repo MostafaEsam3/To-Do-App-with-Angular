@@ -1,0 +1,28 @@
+<table class="table mt-3 col-7 table table-primary table-striped" style="width:95%; margin: auto;">
+
+  <thead>
+    <tr class="text-center">
+      <td>task</td>
+      <td>finished task</td>
+      <td>delete</td>
+    </tr>
+  </thead>
+
+  @for(task of dataOfTask ; track $index){
+    <tr class="bg-light  text-center "  >
+      <td class="text-center" >{{task.taskdata}}</td>
+      <td  ><button class="btn btn-danger" >
+        Not Completed
+      </button>
+    </td>
+      <td  >
+        <button (click)="handledelete($index)" class="btn btn-danger" style="background-color: red;">delete</button>
+      </td>
+
+    </tr>
+  }
+
+
+
+
+</table>
